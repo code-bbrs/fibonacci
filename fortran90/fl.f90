@@ -19,7 +19,7 @@ END INTERFACE
 INTEGER :: n, res
 real :: start, finish, startE, finishE
 ! Call "do while" function
-n = 999999999
+n = 33
 
 ! Write out value of factorial using function call
 call cpu_time(start)

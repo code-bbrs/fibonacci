@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	n := uint(999999999)
+	n := uint(33)
 	// Function time + empty time
 	start := time.Now()
 	res := fib(n)
