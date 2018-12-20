@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>// Test output / fr.html / recursion algorithm /</p>
+<p id="res"></p>
+<p id="time"></p>
+<p id="altsolhref"></p>
+<p id="altsolres"></p>
+<script>
+//====================================================================//
+// JavaScript FireFox Quantum 
+// Calculates the  fibonacci number using the recursion algorithm
+// date: 16.12.2018
+//====================================================================//
+// Function def :
+function fib(n) {
+	var a = 0
+	var b = 1
+	var res
+	if (n <= 1){
+		return n
+	}
+	return fib(n - 1) + fib(n - 2)
+}
+//--------------------------------------------------------------------//
+// Function test :
+var t0 = performance.now(); // milliseconds
+// Fibonacci num :
+var n = 33;
+var res = fib (n);
+// Exec time :
+var t1 = performance.now();
+var time = (t1 - t0)/1000.0;
+// Compare to alternative solution :
+document.getElementById("res").innerHTML = 
+'// Fibonacci number :  fib(' + n + ') = ' + res;
+document.getElementById("time").innerHTML = 
+'// Computing time :  seconds ' + time;
+document.getElementById("altsolhref").innerHTML = 
+'// Compare to alternative solution : https://www.dcode.fr/nombres-fibonacci';
+document.getElementById("altsolres").innerHTML = 
+'// F(33)	3524578';
+//====================================================================//
+// Test output / fr.html / recursion algorithm /
+// Fibonacci number : fib(33) = 3524578
+// Computing time : seconds 0.051
+// Compare to alternative solution : https://www.dcode.fr/nombres-fibonacci
+// F(33) 3524578
+//====================================================================//
+</script>
+</body>
+</html> 
