@@ -1,0 +1,5 @@
+Hi! 
+Here are two famous algorithms for finding the Fibonacci number by its ordinal number written on Fortran, Golang, PHP,  Python, JavaScript:
+- recursive algorithm (files with the name "fr" - fibonacci recursive);
+- cycle agorithm (files with the name "fl" - fibonacci loop).
+I invite everyone to complement the recursive algorithm with methods able to speed it up.
